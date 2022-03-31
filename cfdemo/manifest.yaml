@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: test
   name: nginx-deployment
   labels:
     app: nginx
@@ -31,7 +30,6 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: test
   name: curl-deployment
   labels:
     app: curl
@@ -62,7 +60,6 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: test
   name: nginx
 spec:
   type: NodePort
