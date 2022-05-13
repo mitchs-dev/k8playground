@@ -3,8 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   annotations:
-    app.komodor.com/nginx: FULL_REPO_URL
-    app.komodor.com/nginx.ref: SOURCE_CONTROL_REF
+    app.komodor.com/nginx: https://github.com/stantonmitchell/k8playground
   labels:
     app: nginx
 spec:
@@ -35,8 +34,7 @@ kind: Deployment
 metadata:
   name: curl-deployment
   annotations:
-    app.komodor.com/curl: FULL_REPO_URL
-    app.komodor.com/curl.ref: SOURCE_CONTROL_REF
+    app.komodor.com/curl: https://github.com/stantonmitchell/k8playground
   labels:
     app: curl
 spec:
