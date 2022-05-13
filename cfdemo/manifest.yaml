@@ -48,7 +48,7 @@ spec:
         app: busyBox
     spec:
       containers:
-      - name: curl
+      - name: busyBox
         image: busybox:1.35.0
         resources:
           requests:
