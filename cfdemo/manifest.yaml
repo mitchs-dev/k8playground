@@ -7,7 +7,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
       app: nginx
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1.14.
+        image: nginx:1.14.1
         ports:
         - containerPort: 80
         resources:
@@ -38,7 +38,7 @@ metadata:
   labels:
     app: busybox
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: busybox
@@ -69,7 +69,7 @@ metadata:
   labels:
     app: curl
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: curl
