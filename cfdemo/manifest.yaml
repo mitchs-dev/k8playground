@@ -32,23 +32,23 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: busyBox-deployment
+  name: busybox-deployment
   annotations:
     app.komodor.com/app: https://github.com/stantonmitchell/k8playground
   labels:
-    app: busyBox
+    app: busybox
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: busyBox
+      app: busybox
   template:
     metadata:
       labels:
-        app: busyBox
+        app: busybox
     spec:
       containers:
-      - name: busyBox
+      - name: busybox
         image: busybox:1.35.0
         resources:
           requests:
