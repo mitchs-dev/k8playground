@@ -2,6 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
+  annotations:
+    app.komodor.com/nginx: FULL_REPO_URL
+    app.komodor.com/nginx.ref: SOURCE_CONTROL_REF
   labels:
     app: nginx
 spec:
@@ -31,6 +34,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: curl-deployment
+  annotations:
+    app.komodor.com/curl: FULL_REPO_URL
+    app.komodor.com/curl.ref: SOURCE_CONTROL_REF
   labels:
     app: curl
 spec:
