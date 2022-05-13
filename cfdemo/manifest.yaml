@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   annotations:
-    app.komodor.com/nginx: https://github.com/stantonmitchell/k8playground
+    app.komodor.com/app: https://github.com/stantonmitchell/k8playground
   labels:
     app: nginx
 spec:
@@ -34,7 +34,7 @@ kind: Deployment
 metadata:
   name: curl-deployment
   annotations:
-    app.komodor.com/curl: https://github.com/stantonmitchell/k8playground
+    app.komodor.com/app: https://github.com/stantonmitchell/k8playground
   labels:
     app: curl
 spec:
